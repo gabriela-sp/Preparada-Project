@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+outline: none;
+font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+
+/*Cabeçalho*/
+nav{
+    display: flex;/* permite que os elementos fiquem um ao lado do outro*/
+    align-items: center; /*alinhar elementos no eixo Y*/
+    justify-content: space-between; /*espaço igual para todos os elementos*/
+    padding-top: auto; /*espaço interno apenas na parte superior*/
+    height: 15vh;
+}
+
+#logo{
+    padding-top: 25px;
+    width: 180px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul a{
+    color: black;
+    margin: 0 25px;
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+}
+
+nav ul img{
+    padding-top:15px;
+}
+
+nav ul a:not(.botao-login)::after{
+    content: '';
+    background-color: #6d308a;
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto; /*0 para cima e pra baixo, automatico na lateral (mesmo que estiver na direita vai ser pra esquerda*/
+    padding: 0 5%; /*espaço interno do container que acaba após a seção1*/
+    background-color: white;
+}
+
+.botao-login{
+    background-color: #ffb800;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 40px;
+    cursor:pointer;
+    display: inline-block;
+    transition: 0.15s;
+    text-transform: uppercase;
+}
+
+.botao-login:hover{
+    background-color: #6d308a;
+}
+
+
+/*Banner*/
+.banner{
+    background-image: url("../img/foto-capa.jpg");
+    background-size: 100vw; /*preenche a largura da imagem*/
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.banner .box{
+    padding: 5vh 10vw;
+}
+
+.banner .box p{
+    font-size: 3vw;
+    color: #6d308a;
+    font-weight: bold;
+    margin: 100px 0 200px 0; /*distância entre o texto e o botão*/
+}
+
+.botao-contratar{
+    background-color: #ffb800;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 40px;
+    cursor:pointer;
+    display: inline-block;
+    transition: 0.15s;
+    text-transform: uppercase;
+}
+
+.botao-contratar:hover{
+    background-color: #6d308a;
+}
+
+#p-amarelo{
+    font-size: 3vw;
+    color: #ffb800;
+    font-weight: bold;
+}
+
+
+/*Quem somos nós*/
+.quemsn{
+    display:flex;
+    align-items: center;
+    padding: 30px 10vw;
+}
+
+.quemsomosnos-texto{
+    width:50%;
+}
+
+.quemsn .quemsomosnos-texto h3{
+    font-size: 43px;
+}
+
+.quemsn .quemsomosnos-texto p{
+    margin: 15px 0px 10px 0;
+    text-align: justify;
+}
+
+.quemsomosnos-img{
+    width:50%;
+    
+}
+
+.quemsomosnos-img img{
+    width:90%; 
+}
+
+
+/*Missão*/
+.missao{
+    display:flex;
+    align-items: center;
+    padding: 50px 10vw;
+}
+    
+.missao-texto{
+    width:50%;
+    text-align: justify;
+}
+    
+.missao .missao-texto h3{
+    font-size: 43px;
+}
+    
+.missao .missao p{
+    margin: 15px 0px 10px 0;
+}
+    
+.missao-img{
+    width:50%;    
+}
+    
+.quemsomosnos-img img{
+    width: 100%; 
+}
+
+
+/*O que esperar*/
+.oqueesperar h3{
+    text-align: center;
+    margin-bottom: 50px;
+        
+}
+
+.oqueesperar p{
+    text-align: center;
+}
+
+.oqueesperar .circulos{
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.oqueesperar .informacoes{
+    text-align: center;
+}
+
+.oqueesperar img{
+    width: 70px;
+    margin: 30px;
+}
+
+
+/*Cursos*/
+.cursos{
+    padding-bottom: 100px;
+    background-color: #6d308a;
+}
+.cursos h3{
+    text-align: center;
+    margin-bottom: 100px;
+    padding-top: 70px;
+    color:white;
+}
+
+.box2{
+    background: white;
+    border-radius: 30px;
+    margin: 80px;
+    padding: 40px;
+}
+
+.cursos .row-card-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;;
+}
+
+.cursos p{
+    text-align: justify;
+    font-size: 20px;
+    white-space: wrap;
+}
+
+.cursos .row-card-item img{
+    width: auto;
+    height: auto;
+    transition: 0.3s;
+    padding: 5px;
+}
+
+/*Depoimentos*/
+.depoimentos{
+    background-color: #ffb800;
+}
+
+.depoimentos h3{
+    padding-top: 70px;
+    text-align: center;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.cards{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 100px;;
+}
+
+.depoimentos .card-itens{
+    background-color: white; /*mudar a cor*/
+    margin:15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;
+    box-shadow: 2px 2px 4px black;
+}
+
+.depoimentos .card-itens img{
+    border-radius: 100px;
+    width: 100px;
+    display: block;
+    margin: 30px auto;
+}
+
+.depoimentos .card-itens .nome-user{
+    font-weight: 600px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.depoimentos .card-itens .depoimento-user{
+    font-size: 15px;
+    padding: 0 30px;
+    padding-bottom: 25px;
+}
+
+.depoimentos .card-itens:hover{
+    background-color: #6d308a;
+    margin-top: -5px;
+    color: white;
+}
+
+
+/*Contador*/
+.contador{
+    padding: 20vh;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 70px;
+    text-align: center;
+    background-color: #6d308a;
+    color:white;
+}
+
+.contador h1{
+    font-size: 100px;
+}
+
+.contador p{
+    font-size: 24px;
+}
+
+
+/*Parceiros e apoiadores*/
+.parceiros{
+    padding: 15vh;
+}
+
+.parceiros h3, .parceiros p{
+    text-align: center;
+}
+
+.parceiros div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.parceiros img{
+    width: 15%;
+    margin-top: 80px;
+}
+
+
+/*Contato*/
+.contato{
+    padding: 50px ;
+}
+
+.contato h3{
+    text-align: center;
+}
+
+.contato-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contato-info .lado-esquerdo{
+    width: 50%;
+    padding: 30px;
+    background-color: #6d308a;
+    border-radius: 14px;
+    margin-right: 50px;
+    height: fit-content; /*baseada no conteúdo*/
+    color: white;
+}
+
+.contato-info .lado-esquerdo div{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+/*Footer*/
+.footer{
+    background-color: #ffb800;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+iframe{
+    border-radius: 14px;
+}
