@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffebef;
+    border-radius: 20px;
+}
+
+.container {
+    width: 70%;
+    height: 90vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    border-radius: 20px;
+}
+
+.logo a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.logo img {
+    width: 30%;
+}
+
+.form-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-image img {
+    width: 31rem;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 5rem;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.form-header{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 6rem;
+    height: 0.25rem;
+    background-color: #541472;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.9rem;
+}
+
+.input-box input:hover {
+    background-color: #fac2e7;
+}
+
+/*quando clica na caixa do formulário, a borda muda pra essa cor*/
+.input-box input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.cadastro-button {
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro-button button {
+    border: none;
+    background-color: #541472;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.cadastro-button button:hover {
+    background-color: #67158d;
+}
+
+.cadastro-button button a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+.login a {
+    text-decoration: none;
+    color: #541472
+}
