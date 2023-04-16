@@ -200,7 +200,7 @@
 
     <!--Depoimentos-->
     <section class="depoimentos" id="depoimentos">
-        <h3>DEPOIMENTOS DE QUEM CONHECE O PREPARADA</h3>
+        <h3>DEPOIMENTOS DE QUEM <br> CONHECE O PREPARADA</h3>
         <div class="cards">
             <!--Depoimento 1-->
             <div class="card-itens">
@@ -255,38 +255,36 @@
 
     <!--Contato-->
     <section class="contato" id="contato">
-        <h3>FALE CONOSCO</h3>
         <div class="contato-info">
             <div class="lado-esquerdo">
-
                 <!--Atendimento-->
-                <p><strong>Nossos canais de atendimento</strong></p>
-                <div>
-                    <img src="./img/icon-telefone.png" alt="Telefone" width="15px">
-                    <p>(81)3031-8660</p>
+                <p id="titulo1"><strong>FALE CONOSCO</strong></p>
+                <div id="info">
+                    <img src="./img/icon-telefone.png" alt="Telefone" width="32px">
+                    <p>(81) 3031-8660</p>
                 </div>
-                <div>
-                    <img src="./img/logo-whatsapp.png" alt="Whatsapp" width="15px">
-                    <p>(81)99533-5254</p>
+                <div id="info">
+                    <img src="./img/logo-whatsapp.png" alt="Whatsapp" width="39px">
+                    <p>(81) 99533-5254</p>
                 </div>
-                <div>
-                    <img src="./img/icon-email.png" alt="Telefone" width="15px">
+                <div id="info">
+                    <img src="./img/icon-email.png" alt="Email" width="39px">
                     <p>contato.preparada@gmail.com</p>
                 </div>
-                <div>
-                    <img src="./img/icon-pin.png" alt="Telefone" width="15px">
+                <div id="info">
+                    <img src="./img/icon-pin.png" alt="Localização" width="39px">
                     <p>R. das Ninfas, 84 - Soledade<br>Recife - PE, 50070-050</p>
                 </div>
 
                 <!--Redes sociais-->
-                <p><strong>Nos acompanhe nas redes sociais</strong></p>
-                <div>
-                    <img src="./img/logo-instagram.png" alt="Instagram" width="15px">
-                    <p>Instagram</p>
+                <p id="titulo2"><strong>NOS ACOMPANHE NAS <br> REDES SOCIAIS</strong></p>
+                <div id="info">
+                    <img src="./img/logo-instagram.png" alt="Instagram" width="39px">
+                    <p><a href="https://www.instagram.com/institutoboavistape/" target="_blank">Instagram</a></p>
                 </div>
-                <div>
-                    <img src="./img/logo-facebook.png" alt="Facebook" width="15px">
-                    <p>Facebook</p>
+                <div id="info">
+                    <img src="./img/logo-facebook.png" alt="Facebook" width="39px">
+                    <p><a href="https://www.facebook.com/institutoboavista/" target="_blank">Facebook</a></p>
                 </div>
             </div>
 
@@ -295,8 +293,20 @@
                 <div class="mapa">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.408991904587!2d-34.89342018584238!3d-8.059696982757723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18c3ecf5a321%3A0xef4e0bddc8db5e7f!2sR.%20das%20Ninfas%2C%2084%20-%20Soledade%2C%20Recife%20-%20PE%2C%2050070-050!5e0!3m2!1spt-PT!2sbr!4v1680490120417!5m2!1spt-PT!2sbr"
-                        width="605px" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="550px" height="320" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="apoiar">    
+                    <h3><strong>APOIE O PROJETO</strong></h3>
+                    <p>Ajude o Preparada a continuar acontecendo</p>
+                    <div>
+                        <form id="form-doacao" action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+                            <input name="currency" type="hidden" value="BRL">
+                            <input name="receiverEmail" type="hidden" value="pagseguro@institutoboavista.org.br">
+                            <input name="iot" type="hidden" value="button">
+                            <button class="botao-doar" type="submit" target="_blank"><strong>DOAR</strong></button>
+                          </form>
+                    </div>
                 </div>
             </div>
         </div>
