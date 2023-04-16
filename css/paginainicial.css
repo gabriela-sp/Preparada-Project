@@ -16,16 +16,15 @@ body{
 
 /*Cabeçalho*/
 nav{
+    height: 80px;
     display: flex;/* permite que os elementos fiquem um ao lado do outro*/
     align-items: center; /*alinhar elementos no eixo Y*/
     justify-content: space-between; /*espaço igual para todos os elementos*/
-    padding-top: auto; /*espaço interno apenas na parte superior*/
-    height: 15vh;
 }
 
 #logo{
-    padding-top: 25px;
-    width: 180px;
+    margin-top: 30px;
+    width: 160px;
 }
 
 nav ul{
@@ -36,7 +35,7 @@ nav ul{
 nav ul a{
     color: black;
     margin: 0 25px;
-    font-size: 14px;
+    font-size: 16px;
     display: block;
     font-weight: bold;
 }
@@ -61,6 +60,7 @@ nav ul a:hover::after{
 
 .container{
     max-width: 1400px;
+    height: 80px;
     margin: 0 auto; /*0 para cima e pra baixo, automatico na lateral (mesmo que estiver na direita vai ser pra esquerda*/
     padding: 0 5%; /*espaço interno do container que acaba após a seção1*/
     background-color: white;
@@ -84,10 +84,18 @@ nav ul a:hover::after{
 
 /*Banner*/
 .banner{
-    background-image: url("../img/foto-capa.jpg");
+    background-image: url("../img/bg-roxo.png");
     background-size: 100vw; /*preenche a largura da imagem*/
     height: 100vh;
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45%;
 }
 
 .banner .box{
@@ -96,7 +104,7 @@ nav ul a:hover::after{
 
 .banner .box p{
     font-size: 3vw;
-    color: #6d308a;
+    color: #ffffff;
     font-weight: bold;
     margin: 100px 0 200px 0; /*distância entre o texto e o botão*/
 }
@@ -114,12 +122,6 @@ nav ul a:hover::after{
 
 .botao-contratar:hover{
     background-color: #6d308a;
-}
-
-#p-amarelo{
-    font-size: 3vw;
-    color: #ffb800;
-    font-weight: bold;
 }
 
 
@@ -527,4 +529,14 @@ iframe{
 
 .footer p{
     font-size: 20px;
+}
+
+#palavra-roxa{
+    color: #6d308a;
+}
+
+#palavra-amarela{
+    font-size: 3vw;
+    color: #ffb800;
+    font-weight: bold;
 }
