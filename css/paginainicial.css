@@ -84,7 +84,7 @@ nav ul a:hover::after{
 
 /*Banner*/
 .banner{
-    background-image: url("../img/bg-roxo.png");
+    background-image: url("../img/bg-mulheres.png");
     background-size: 100vw; /*preenche a largura da imagem*/
     height: 100vh;
     background-repeat: no-repeat;
@@ -99,14 +99,16 @@ nav ul a:hover::after{
 }
 
 .banner .box{
-    padding: 5vh 10vw;
+    padding: 5vh 1vw;
 }
 
 .banner .box p{
     font-size: 3vw;
     color: #ffffff;
     font-weight: bold;
-    margin: 100px 0 200px 0; /*distância entre o texto e o botão*/
+    margin: 100px 0 200px; /*distância entre o texto e o botão*/
+    padding-right: 55%;
+    text-align: center;
 }
 
 .botao-contratar{
@@ -207,11 +209,56 @@ nav ul a:hover::after{
 }
 
 
+/*Contador*/
+.contador-num{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 20vh;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 70px;
+    text-align: center;
+    color:white;
+}
+
+.contador{
+    position: relative;
+}
+
+
+.contador-num h1{
+    font-size: 100px;
+}
+
+.contador-num p{
+    font-size: 24px;
+}
+
+.contador-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contador-img #cima{
+    width: 100%;
+}
+
+.contador-img #baixo{
+    width: 100%;
+}
+
 /*O que esperar*/
 .oqueesperar h3{
     font-size: 43px;
     text-align: center;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .oqueesperar h3::after{
@@ -282,9 +329,13 @@ nav ul a:hover::after{
     padding: 20px;;
 }
 
+.cursos h4{
+    font-size: 20px;
+}
+
 .cursos p{
     text-align: justify;
-    font-size: 20px;
+    font-size: 15px;
     white-space: wrap;
 }
 
@@ -357,26 +408,6 @@ nav ul a:hover::after{
     background-color: #6d308a;
     margin-top: -5px;
     color: white;
-}
-
-
-/*Contador*/
-.contador{
-    padding: 20vh;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 70px;
-    text-align: center;
-    background-color: #6d308a;
-    color:white;
-}
-
-.contador h1{
-    font-size: 100px;
-}
-
-.contador p{
-    font-size: 24px;
 }
 
 
@@ -536,7 +567,7 @@ iframe{
 }
 
 #palavra-amarela{
-    font-size: 3vw;
+    font-size: 43px;
     color: #ffb800;
     font-weight: bold;
 }
